@@ -1,0 +1,76 @@
+# Task Manager
+
+A full-stack Task Manager application built using **React**, **Django REST Framework**, and **SQLite**. The application allows users to securely manage their daily tasks through an intuitive and responsive interface.
+
+## Features
+
+- User Registration
+- User Login (JWT Authentication)
+- Create Tasks
+- View Tasks
+- Update Tasks
+- Delete Tasks
+- Protected Routes
+- Responsive User Interface
+
+## Tech Stack
+
+### Frontend
+- React.js
+- Vite
+- JavaScript
+- CSS
+- Axios
+
+### Backend
+- Python
+- Django
+- Django REST Framework
+- SQLite
+
+## Project Structure
+
+```
+Task-Manager/
+├── backend/
+├── frontend/
+└── README.md
+```
+
+## Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/allenmathewhnh-rgb/Task-Manager.git
+cd Task-Manager
+```
+
+### 2. Backend Setup
+
+```bash
+cd backend
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+```
+
+### 3. Frontend Setup
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+## API Authentication
+
+This project uses **JWT (JSON Web Token)** authentication to secure API endpoints.
+
+## Repository
+
+GitHub: https://github.com/allenmathewhnh-rgb/Task-Manager
+
+## Author
+
+**Alen Mathew**
