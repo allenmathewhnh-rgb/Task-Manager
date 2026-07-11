@@ -1,16 +1,92 @@
-# React + Vite
+# Task Manager Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React frontend for the Django REST Framework Task Manager API.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React with Vite
+- React Router DOM
+- Axios
+- JWT authentication with SimpleJWT
+- Plain responsive CSS
 
-## React Compiler
+## API Endpoints Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The frontend expects the backend API at `http://localhost:8000/api`.
 
-## Expanding the ESLint configuration
+- `POST /api/register/`
+- `POST /api/login/`
+- `POST /api/refresh/`
+- `GET /api/tasks/`
+- `POST /api/tasks/`
+- `PATCH /api/tasks/:id/`
+- `DELETE /api/tasks/:id/`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To override the API URL, create `frontend/.env`:
+
+```env
+VITE_API_BASE_URL=http://localhost:8000/api
+```
+
+## Run the Project
+
+From the project root, start the backend:
+
+```bash
+cd backend
+python manage.py runserver
+```
+
+In a second terminal, start the frontend:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Open `http://localhost:5173`.
+
+## Frontend Structure
+
+```text
+src/
+  api/
+    auth.js
+    client.js
+    tasks.js
+  components/
+    Navbar.jsx
+    TaskCard.jsx
+    TaskForm.jsx
+    TaskList.jsx
+  context/
+    AuthContext.jsx
+  pages/
+    Dashboard.jsx
+    Login.jsx
+    Register.jsx
+  routes/
+    ProtectedRoute.jsx
+  styles/
+    app.css
+  utils/
+    apiError.js
+    tokenStorage.js
+  App.jsx
+  index.css
+  main.jsx
+```
+
+## Features
+
+- User registration and login
+- Access and refresh token storage
+- Authorization header interceptor
+- Automatic token refresh on expired access tokens
+- Protected dashboard route
+- Task create, read, update, delete
+- Completed/pending toggle
+- All, Completed, and Pending filters
+- Loading and error states
+- Responsive dashboard UI
