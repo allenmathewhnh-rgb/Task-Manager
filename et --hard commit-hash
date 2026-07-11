@@ -1,0 +1,7 @@
+[33m92d85bd[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{0}: reset: moving to origin/main
+[33m92d85bd[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{1}: commit: Your commit message
+[33m228a733[m HEAD@{2}: commit: Add requirement.txt
+[33mee2097b[m HEAD@{3}: commit: Final Implementation
+[33m4b57e47[m HEAD@{4}: commit: Completed frontend and backend implementation
+[33md9ff9c5[m HEAD@{5}: Branch: renamed refs/heads/master to refs/heads/main
+[33md9ff9c5[m HEAD@{7}: commit (initial): Initial backend and frontend setup
