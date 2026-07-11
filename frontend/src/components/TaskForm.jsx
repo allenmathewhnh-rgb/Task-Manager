@@ -53,7 +53,7 @@ function TaskForm({ initialTask, isSubmitting, onCancel, onSubmit }) {
           type="text"
           value={formData.title}
           onChange={handleChange}
-          placeholder="Finish internship project"
+          placeholder="eg:Check Emails"
           maxLength="200"
           required
         />

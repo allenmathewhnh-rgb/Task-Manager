@@ -73,12 +73,12 @@
 }
 
 .btn-primary {
-  background: var(--primary);
+  background: rgb(30, 5, 173);
   color: #ffffff;
 }
 
 .btn-primary:hover:not(:disabled) {
-  background: var(--primary-dark);
+  background: rgb(5, 5, 152);
 }
 
 .btn-secondary,
@@ -238,7 +238,7 @@
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 999px;
-  color: var(--muted);
+  color: black;
   font-weight: 800;
   padding: 7px 12px;
 }
@@ -339,7 +339,7 @@
 
 .task-date,
 .task-description {
-  color: var(--muted);
+  color: black;
 }
 
 .task-date {
