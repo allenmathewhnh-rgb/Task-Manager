@@ -71,6 +71,15 @@ This project uses **JWT (JSON Web Token)** authentication to secure API endpoint
 
 GitHub: https://github.com/allenmathewhnh-rgb/Task-Manager
 
+## Screenshots
+
+## Login Page
+
+<img width="1903" height="966" alt="Screenshot 2026-07-11 235453" src="https://github.com/user-attachments/assets/d2cb94e1-66e0-4026-8cd5-580973f6e760" />
+
+## Dashboard
+<img width="1910" height="967" alt="Screenshot 2026-07-11 235557" src="https://github.com/user-attachments/assets/ad30d3c9-bf64-446d-9173-2b69c645392a" />
+
 ## Author
 
 **Alen Mathew**
